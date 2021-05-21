@@ -126,7 +126,7 @@ async def botinfo(ctx):
     else:
         time_format = "**{h}** hours, **{m}** minutes, and **{s}** seconds."
     uptime_stamp = time_format.format(d=days, h=hours, m=minutes, s=seconds)
-    embed = discord.Embed(title=botver, description="A Discord bot designed for SiIvaGunner's King for Another Day Tournament. Provides information about participants, as well as their source lists and links that could be useful.", color=0x7289da)
+    embed = discord.Embed(title=botver, description="A Discord bot designed for SiIvaGunner's King for Another Day Tournament. Provides information about participants, as well as their source lists and links that could be useful. [You can add me to your server, if you want.](https://discord.com/oauth2/authorize?client_id=647965319922450432&scope=bot&permissions=322624)", color=0x7289da)
     embed.add_field(name="Made by:", value=dev.name + "#" + dev.discriminator)
     embed.add_field(name="This bot is currently in:", value=f"{len(bot.guilds)} server(s)")
     embed.add_field(name="Uptime:", value="Placeholder-Chan has been online for {}".format(uptime_stamp), inline=False)

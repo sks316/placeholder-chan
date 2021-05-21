@@ -1,8 +1,6 @@
 # [Placeholder-Chan](https://mojo.highquality.rip)
 [![invite-badge][]][invite]
 
-### I am not done updating the source code yet. I will upload it here with a license when it's ready.
-
 
 <p align="center">
   <img height=500 src="https://mojo.highquality.rip/wp-content/uploads/2019/08/placeholder-chan.png">
@@ -60,5 +58,5 @@ python3 placeholder-chan.py
 ```
 
 
-[invite]: https://example.com
+[invite]: https://discord.com/oauth2/authorize?client_id=647965319922450432&scope=bot&permissions=322624
 [invite-badge]: https://img.shields.io/badge/invite%20placeholder—chan-click%20here-black.svg?style=for-the-badge&colorB=7289DA
