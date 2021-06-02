@@ -10,7 +10,7 @@
 </p>
 
 
-This is the source code for Placeholder-Chan, a failed project of mine from two years ago. I decided to finish it and upload it. What you're getting here isn't exactly what I left untouched for two years, but it's mostly unchanged aside from a few improvements to the code and updates to the character info. So aside from a few improvements and updates, you're getting esentially what was my horrible code from two years ago.
+This is the source code for Placeholder-Chan, a failed project of mine from two years ago. I decided to finish it and upload it. What you're getting here isn't exactly what I left untouched for two years, but it's mostly unchanged aside from a few improvements to the code and updates to the character info. So aside from a few improvements and updates, you're getting essentially what is my horrible code from two years ago.
 
 # The Story
 So about two years ago, the [SiIvaGunner: King for Another Day Tournament](https://siivagunner.fandom.com/wiki/King_for_Another_Day_Tournament) was a thing. At the time, I was heavily-invested in high-quality rips and the shitposty nature of them, as I was a very shitposty person. I knew nothing of making music or art, but being the person I am, I still wanted to contribute *something*. So, I made a Discord bot and called it Placeholder-Chan, who is one half of the bonus character Fighting Placeholder Team. I used my [Mewtwo Bot](https://github.com/sks316/mewtwo-bot) as a base. The Placeholder-Chan bot essentially acts as a knowledge base for the tournament and can post the source list for each character on-demand. I made the bot, then proposed the idea of it to one of the official SiIvaGunner Discord admins. They shot me down, and I never touched the bot again.
