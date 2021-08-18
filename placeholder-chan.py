@@ -86,7 +86,7 @@ async def on_ready():
     for c in cogs:
         bot.load_extension(c)
     print('Placeholder-Chan Discord Bot, designed for the SiIvaGunner: King for Another Day Tournament')
-    print('v1.0 by ' + dev.name + "#" + dev.discriminator + ' - Support: DM sks316#2523')
+    print('v1.0 by ' + dev.name + "#" + dev.discriminator + ' - Support: DM PrincessLillie#2523')
     print('Logged into: ' + bot.user.name + "#" + bot.user.discriminator)
     print('------')
 
@@ -103,7 +103,7 @@ async def before_change_status():
 @commands.is_owner()
 async def shutdown(ctx):
     await ctx.send(":wave: Done! See ya!")
-    await bot.logout()
+    await bot.close()
 
 @bot.command()
 @commands.is_owner()
@@ -131,7 +131,7 @@ async def botinfo(ctx):
     embed.add_field(name="This bot is currently in:", value=f"{len(bot.guilds)} server(s)")
     embed.add_field(name="Uptime:", value="Placeholder-Chan has been online for {}".format(uptime_stamp), inline=False)
     embed.add_field(name="Source Code:", value="[Placeholder-Chan's source code is available on GitHub.](https://github.com/sks316/placeholder-chan)", inline=False)
-    embed.set_footer(text=botver + " by sks316#2523", icon_url=bot.user.avatar_url)
+    embed.set_footer(text=botver + " by PrincessLillie#2523", icon_url=bot.user.avatar_url)
     await ctx.send(embed=embed)
 
 bot.remove_command('help')
