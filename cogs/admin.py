@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 import os
 import io
 import textwrap
@@ -16,16 +16,16 @@ class Admin(commands.Cog):
     @commands.command(pass_context=True)
     @commands.is_owner()
     async def adminhelp(self, ctx):
-        embed = discord.Embed(title=botver, description="Administrator commands for Placeholder-Chan. \n The command prefix is `p-`. To run a command, you must begin a message with `p-`.", color=0x7289da)
+        embed = nextcord.Embed(title=botver, description="Administrator commands for Placeholder-Chan. \n The command prefix is `p-`. To run a command, you must begin a message with `p-`.", color=0x7289da)
         embed.add_field(name="Commands:", value="**p-shutdown** - Shuts down the bot. Aliases: **p-logout** \n**p-changestatus** - Changes the bot's Playing status. \n**p-reload** - Reloads all cogs.\n**p-serverlist** - Outputs a list of servers the bot is in to the terminal. \n**p-clearterm** - Clears the terminal. \n**p-eval** - Evaluate provided Python code.", inline=False)
-        embed.set_footer(text=botver + " by PrincessLillie#2523", icon_url=self.bot.user.avatar_url)
+        embed.set_footer(text=botver + " by PrincessLillie#2523", icon_url=self.bot.user.avatar.url)
         await ctx.message.author.send(embed=embed)
         await ctx.message.add_reaction("✅")
 
     @commands.command()
     @commands.is_owner()
     async def changestatus(self, ctx, *, arg):
-        await self.bot.change_presence(activity=discord.Game(name=arg))
+        await self.bot.change_presence(activity=nextcord.Game(name=arg))
         await ctx.send(":ok_hand: Done.")
 
     @commands.command(pass_context=True)
@@ -80,12 +80,6 @@ class Admin(commands.Cog):
                 await ctx.message.add_reaction('\u2705')
             except Exception: 
                 pass
-            if ret is None:
-                if value:
-                    await ctx.codeblock(value)
-            else:
-                self._last_result = ret
-                await ctx.codeblock(f"{value}{ret}")
 
     @commands.command()
     @commands.is_owner()
