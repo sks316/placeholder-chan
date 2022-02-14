@@ -131,7 +131,7 @@ async def botinfo(ctx):
     embed.add_field(name="This bot is currently in:", value=f"{len(bot.guilds)} server(s)")
     embed.add_field(name="Uptime:", value="Placeholder-Chan has been online for {}".format(uptime_stamp), inline=False)
     embed.add_field(name="Source Code:", value="[Placeholder-Chan's source code is available on GitHub.](https://github.com/sks316/placeholder-chan)", inline=False)
-    embed.set_footer(text=botver + " by PrincessLillie#2523", icon_url=bot.user.avatar_url)
+    embed.set_footer(text=botver + " by PrincessLillie#2523", icon_url=bot.user.avatar.url)
     await ctx.send(embed=embed)
 
 bot.remove_command('help')

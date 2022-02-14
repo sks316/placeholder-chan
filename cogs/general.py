@@ -601,10 +601,10 @@ class General(commands.Cog):
     async def links(self, ctx):
         emb1 = nextcord.Embed(title="SiIvaGunner: King for Another Day Tournament MOJO!!", url='https://mojo.highquality.rip', description="On the MOJO!!, you will find interviews, character information, and other content related to the King for Another Day Tournament.", color=0x7289da)
         emb1.set_thumbnail(url='https://mojo.highquality.rip/wp-content/themes/mojo/logo.png')
-        emb1.set_footer(text="Requested by " + ctx.author.name + "#" + ctx.author.discriminator + " - " + botver + " by PrincessLillie#2523", icon_url=ctx.author.avatar_url)
+        emb1.set_footer(text="Requested by " + ctx.author.name + "#" + ctx.author.discriminator + " - " + botver + " by PrincessLillie#2523", icon_url=ctx.author.avatar.url)
         emb2 = nextcord.Embed(title="SiIvaGunner - YouTube", url='https://youtube.com/SiIvaGunner', description="I only upload high quality video game rips. Please read the channel description.", color=0x7289da)
         emb2.set_thumbnail(url='https://vignette.wikia.nocookie.net/siivagunner/images/e/e9/SiivaGunner_post-strike.png/revision/latest?cb=20190301022411')
-        emb2.set_footer(text="Requested by " + ctx.author.name + "#" + ctx.author.discriminator + " - " + botver + " by PrincessLillie#2523", icon_url=ctx.author.avatar_url)
+        emb2.set_footer(text="Requested by " + ctx.author.name + "#" + ctx.author.discriminator + " - " + botver + " by PrincessLillie#2523", icon_url=ctx.author.avatar.url)
         await ctx.send(embed=emb1)
         await ctx.send(embed=emb2)
         
@@ -612,7 +612,7 @@ class General(commands.Cog):
     async def kfad(self, ctx):
         embed = nextcord.Embed(title=":question: What is King for Another Day?", url='https://mojo.highquality.rip/what-is-king-for-another-day/', description="The SiIvaGunner: King for Another Day Tournament was an event in which characters battled it out to become the host of SiIvaGunner for a day! It was the sequel to the original King for a Day Tournament, but with double the roster size, and double the excitement! The 32 characters ranged from famous video game icons, to cartoon characters, and even real life musicians and figures, each one bringing their own flair with their variety of audio and music sources. It was up to the viewers to push for what they wanted to hear! \n\n As the tournament progressed, original musical arrangements for every fighter were uploaded to SiIvaGunner. If the viewer liked the sound of a certain fighter, they could vote for them once voting opened for their matchup! The winner of each individual match was decided by popularity vote, and would move on to the next round of the bracket, while the loser is defeated. This time around, however, there was a loser’s bracket! This meant that fighters who met their end early could still have a chance to come back.\n\n Only one victor could reign over all. Once a winner was decided, they would receive their own respective event day, filled with high-quality rips based on their assigned source list! Unlike the first King for a Day, all four of the finalists would get prizes, including the king! \n\n The SiIvaGunner: King for Another Day Tournament was organized and held by the YouTube channel SiIvaGunner. It started on November 23rd, 2019, and ended on January 8th, 2020. DJ Professor K was the winner.", color=0x5a5a5a)
         embed.set_image(url='https://sks316.s-ul.eu/8QgGqUa1.png')
-        embed.set_footer(text="Requested by " + ctx.author.name + "#" + ctx.author.discriminator + " - " + botver + " by PrincessLillie#2523", icon_url=ctx.author.avatar_url)
+        embed.set_footer(text="Requested by " + ctx.author.name + "#" + ctx.author.discriminator + " - " + botver + " by PrincessLillie#2523", icon_url=ctx.author.avatar.url)
         await ctx.send(embed=embed)
 
     @commands.command(pass_context=True)
@@ -620,7 +620,7 @@ class General(commands.Cog):
         embed = nextcord.Embed(title=botver, description="The command prefix is `p-`. To run a command, you must begin a message with `p-`.", color=0x7289da)
         embed.add_field(name="KFAD:", value="**p-sources** - Provides the source list for a specified character, among other information. Aliases: **p-i**, **p-info**\n**p-kfad** - Provides information about King for Another Day: What it is and who made it. Aliases: **p-kfadinfo**\n**p-links** - Posts links that may (or may not) be useful.", inline=False)
         embed.add_field(name="Other:", value="**p-botinfo** - See information about the bot, such as its uptime.\n**p-ping** - Returns the bot's latency. Aliases: **p-pong**\n**p-bug** - Submit a bug report if anything goes wrong. \n**p-suggest** - Want to see something added to the bot? Suggest it!", inline=False)
-        embed.set_footer(text=botver + " by PrincessLillie#2523", icon_url=self.bot.user.avatar_url)
+        embed.set_footer(text=botver + " by PrincessLillie#2523", icon_url=self.bot.user.avatar.url)
         await ctx.message.author.send(embed=embed)
         await ctx.message.add_reaction("✅")
 
