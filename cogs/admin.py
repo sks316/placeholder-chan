@@ -6,7 +6,7 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-botver = "Placeholder-Chan v1.0"
+botver = "Placeholder-Chan v1.1"
 
 class Admin(commands.Cog):
     def __init__(self, bot):

@@ -16,7 +16,7 @@ cogs = ['cogs.general', 'cogs.other', 'cogs.admin']
 
 start_time = datetime.datetime.utcnow()
 
-botver = "Placeholder-Chan v1.0"
+botver = "Placeholder-Chan v1.1"
 
 
 #--This is the characters list, used for the error handler examples.--#
@@ -86,7 +86,7 @@ async def on_ready():
     for c in cogs:
         bot.load_extension(c)
     print('Placeholder-Chan Discord Bot, designed for the SiIvaGunner: King for Another Day Tournament')
-    print('v1.0 by ' + dev.name + "#" + dev.discriminator + ' - Support: DM PrincessLillie#2523')
+    print('v1.1 by ' + dev.name + "#" + dev.discriminator + ' - Support: DM PrincessLillie#2523')
     print('Logged into: ' + bot.user.name + "#" + bot.user.discriminator)
     print('------')
 

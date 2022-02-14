@@ -2,7 +2,7 @@ import nextcord
 from nextcord.ext import commands
 import placeholder_config as config
 
-botver = "Placeholder-Chan v1.0"
+botver = "Placeholder-Chan v1.1"
 
 class Other(commands.Cog):
     def __init__(self, bot):
